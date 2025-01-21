@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>WDD 131</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ezekwe Chioma Francisca</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals: Ezekwe Chioma Francisca Course Home Page.">
+    <meta name="author" content="Ezekwe Chioma Francisca">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <!-- Link to the getdates.js file to dynamically update the footer -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Ezekwe Chioma Francisca</h1>   
+    <h1>WDD 131: Dynamic Web Fundamentals - <b>Ezekwe Chioma Francisca</b></h1>
+    <nav class="links">
+        <a href="https://www.linkedin.com/login">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scriptures</a>
+        <a href="final-project.html">Final Project</a>  
+    </nav> 
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="me">
+                    <p>My name is Chioma Ezekwe and I am from Imo State, Nigeria. I enjoy learning new things. 
+                        I am so excited to be on this journey of becoming a Web Developer with BYU-Idaho.</p>
+                    <img src="images/profile.jpg" alt="about me">
+                </div>
+           
+                <h3>Imo, Nigeria</h3>
+                <div class="key">
+                    <figure>
+                        <img src="images/nigeria-flag.jpg" alt="nigerian flag">
+                        <figcaption>Official Flag of The Federal Republic of Nigeria</figcaption>
+                    </figure>
+                    
+                    <p>Nigeria, Africa's most populous country with over 200 million people, 
+                        is noted for its numerous cultures, languages, and rich history. 
+                        Despite challenges like political instability and economic inequality, 
+                        it remains a major player in Africa, driven by oil and agriculture.
+                    </p>
+
+                    <p>Imo, a state located in the South-East geopolitical zone of Nigeria. 
+                        It is bordered to the north by Anambra State, to the west and south by Rivers State, 
+                        and to the east by Abia State. The state is named after the Imo River, which flows 
+                        along its eastern border. The capital of Imo State is Owerri, and 
+                        its slogan is - Eastern Heartland.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="site">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                        <li><a href="https://www.udemy.com/">Udemy</a></li>
+                        <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                        <li><a href="https://www.pluralsight.com/">Pluralsight</a></li>
+                        <li><a href="https://alison.com/">Alison</a></li>
+                        <li><a href="https://css-tricks.com/">CSS-TRICKS</a></li>
+                        <li><a href="https://developer.mozilla.org/">Dev. to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                        <li><a href="https://placehold.co">Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>      
+    </main>
+    <footer>
+        <p>&copy;<b id="currentyear"></b>😍 Ezekwe Chioma Francisca 💕 Imo State, Nigeria</p>
+        <p id="lastModifyDate"></p>
+    </footer>
 </body>
 </html>

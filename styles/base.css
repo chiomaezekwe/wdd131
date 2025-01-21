@@ -1,0 +1,226 @@
+/* Defining color scheme and other variables */
+:root {
+  --accent-color: #f8c630;     /* Saffron */
+  --text1-color: #020202;   /* Black */
+  --text-color: #000000;          /*Pure Black */
+  --heading-color: #fdfffc;     /* Baby Powder */
+  --primary-color: #001f54;     /* Penn Blue */
+  --secondary-color: #6457a6;     /* Ultra Violet */
+  --secondary1-color: #388659;   /* Sea Green */
+  --link-color: #ffffff;     /* White heading color */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.2;
+  padding: 10px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: var(--link-color);
+}
+
+h1 b {
+  color: var(--accent-color);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: bold;
+
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+main p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  max-width: 1800px;
+  margin: 30px auto; 
+  padding: 20px;
+  background-color: var(--heading-color);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+}
+
+
+.container h2 {
+  background-color: var(--primary-color);
+  color: var(--link-color);
+  text-align: center;
+}
+
+.card img {
+  width: 240px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--heading-color);
+}
+
+.card h2, .card h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--text1-color);
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+.card ul {
+  padding: 10;
+  margin: 50px 50px 10px;
+  margin: 10px 10px 10px 10px;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+
+.card li {
+  margin-bottom: 10px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--text1-color);
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  font-weight: bold;
+  display: block;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--heading-color);
+  color: var(--secondary-color);
+  text-decoration: none; 
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.key figure {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.key img {
+  max-width: 150px;
+  border-radius: 5px;
+  border: 1px solid var(--text1-color);
+}
+
+.key p {
+  flex-grow: 1;
+  line-height: 1.2;
+}
+
+.site a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block; 
+  background-color: var(--secondary-color); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: var(--link-color); 
+  margin: 5px;
+}
+
+.site a:hover {
+  text-decoration: underline;
+  background-color: var(--secondary1-color);
+  color: var(--accent-color);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+footer p {
+  margin: 5px 0;
+  color: var(--heading-color);
+}
+
+footer #lastModifyDate {
+  font-size: 1rem;
+  color: var(--accent-color);
+}
