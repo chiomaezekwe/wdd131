@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 640px;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* A very light, faint border */
+    padding: 1rem;
+    background-color: #2EC0F9; /* Deep Sky Blue */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+footer {
+    text-align: left;
+    font-size: 1.2rem;
+}
