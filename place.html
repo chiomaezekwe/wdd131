@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals: Ezekwe Chioma Francisca. 
+    Create and build a responsive web page that highlights a country or location, using HTML, CSS, 
+    and JavaScript to implement best practices for interactivity and dynamic features.">
+    <meta name="author" content="Ezekwe Chioma Francisca">
+
+    <link rel="stylesheet" href="styles/place.css">  
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Federal Republic of Nigeria</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/lagos-nigeria-small.webp" media="(max-width: 600px)">
+                <source srcset="images/lagos-nigeria-medium.webp" media="(max-width: 1000px)">
+                <img src="images/lagos-nigeria-large.webp" alt="Nigeria" class="hero-img">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Official Name:</strong> Federal Republic of Nigeria</p>
+            <p><strong>Capital:</strong> Federal Capital Territory (FCT), Abuja</p>
+            <p><strong>Area:</strong> 923,768 km²</p>
+            <p><strong>Population:</strong> Approx. 223 million (2023 estimate)</p>            
+            <p><strong>Languages:</strong> English (official), Igbo, Hausa, and Yoruba.</p>
+            <p><strong>Currency:</strong> Nigerian Naira (₦ or NGN)</p>
+            <p><strong>Time Zone:</strong> West Africa Time (WAT) - UTC+1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+            <p><strong>Internet TLD:</strong> .ng</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <span class="icon-weather">⛅</span></h2>
+            <img id="icon" src="images/icon-weather.svg" alt="Weather icon">
+            <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
+            <p><strong>Conditions:</strong> <span id="conditions">Loading...</span></p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill">Loading...</span></p>
+            <p><strong>Wind:</strong> <span id="wind">Loading...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> &#x1F31E Ezekwe Chioma Francisca &#x1F31E Federal Republic of Nigeria</p>
+        <p id="last-Modified"></p>
+    </footer>    
+</body>
+</html>
