@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Enhanced Temple Album | WDD 131 - Dynamic Web Fundamentals - Ezekwe Chioma Francisca</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals: Ezekwe Chioma Francisca. 
+    A collection of LDS temple images and details world wide.">
+    <meta name="author" content="Ezekwe Chioma Francisca">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+<header>
+<h1>Temple Album</h1>
+<nav>
+    <ul>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="old">Old</a></li>
+        <li><a href="#" id="new">New</a></li>
+        <li><a href="#" id="large">Large</a></li>
+        <li><a href="#" id="small">Small</a></li>
+    </ul>
+</nav>
+<button class="menu">&#9776;</button>
+</header> 
+    <main>
+        <h2>Picture Gallery</h2>
+        
+        <div class="temple-container" id="temple-container">
+            <!-- Dynamic Temple Cards will appear here -->            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>😍 Ezekwe Chioma Francisca 💕 Imo State, Nigeria</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

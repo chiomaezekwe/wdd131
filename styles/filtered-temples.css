@@ -1,0 +1,144 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  header {
+    background-color: #001f54;
+    color: #ffffff;
+    padding: 25px 5px;
+    display: flex;                  /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center;            /* Align items vertically */
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 5px;
+    justify-content: center;
+    display: flex;                /*List items horizontally */
+  }
+  
+  nav ul li {
+    margin: 5px 10px;               /* Space between nav items */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #f8c630;
+  }
+  
+  .menu {
+    display: none;                /* Hide by default on larger screens */
+  }
+  
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  main h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 28px;
+  }
+  
+  .temple-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .temple-card {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.temple-card h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.temple-card p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+    
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f54;
+    color: #ffffff;
+  }
+  
+  
+  /* Mobile Styles: Hamburger Menu */
+  @media screen and (max-width: 767px) {
+    header {
+      flex-direction: column;     /* Display items vertically on mobile */
+      align-items: flex-start;    
+    }
+  
+    nav ul {
+      flex-direction: column;     /* Display nav items vertically */
+      display: none;              /* Hide the navigation by default */
+      background-color: #6457a6;  /* Background color (nav) for mobile */
+      width: 100%;                
+      padding: 10px 0;
+    }
+  
+    nav ul.visible {
+      display: flex;              /* Show menu when it's toggled */ 
+    }
+  
+    .menu {
+      display: block;             /* Shows hamburger on mobile */
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;             /* Space between nav items in mobile */
+    }
+  
+    nav a {
+      color: #ffffff;
+      font-size: 18px;
+    }
+  }
+  
+  
