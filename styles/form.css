@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #001f54;
+    --secondary-color: #005B40;
+    --secondary-color1: #4CAF50;
+    --accent-color: #f8c630;
+    --heading-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--heading-color);
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    max-width: 768px;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding: 0.2rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the header */
+}
+
+/* Main Form Styling */
+main {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+   max-width: 500px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Label and radio button */
+.rating label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+.rating input[type="radio"] {
+    display: block; 
+    margin: 0 auto;
+}
+
+/* Useful Features checkboxes vertical layout */
+.checkbox {
+    display: block;
+    margin-top: 10px;
+}
+
+.checkbox label {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px; /* Adds space between checkbox and label text */
+}
+
+
+input[type="checkbox"], input[type="radio"] {
+    transform: scale(1.0);
+    margin-right: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* Label and Input Styling */
+label {
+    display: block;
+    margin: 8px 0 5px;
+}
+
+
+.form-written {
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.form-name {
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-out;
+    color: var(--heading-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;   
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--heading-color);
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    padding: 0.2rem;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+footer p{
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Mobile Styles: Responsive Design */
+@media (max-width: 768px) {
+    /* Reduce form width on mobile devices */
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Reduce header padding */
+    header {
+        padding: 15px;
+    }
+
+    /* For better readability, font size adjusted */
+    body {
+        font-size: 14px;
+    }
+
+    /* for easier touch interaction, input fields and buttons are increased in size */
+    input[type="submit"], input[type="text"], select, textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Adjust spacing between checkboxes and labels */
+    .checkbox label {
+        font-size: 14px;
+    }
+
+    /* Keep the radio buttons horizontally aligned */
+    .rating {
+        justify-content: space-evenly; /* Distribute the rating labels evenly */
+    }
+
+    /* Adjust footer padding for mobile */
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Mobile Styles for smaller screens */
+@media (max-width: 480px) {
+    /* Further reduce form width for very small screens */
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Increase padding inside text area for mobile */
+    textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Adjust button size */
+    input[type="submit"] {
+        padding: 14px 24px;
+        font-size: 18px;
+    }
+
+    /* Adjusting the font size for labels and inputs */
+    input[type="text"], select, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Make rating numbers move above the radio buttons */
+    .rating label {
+        flex-direction: column;
+    }
+
+    .rating label span {
+        margin-bottom: 10px; 
+    }
+}
