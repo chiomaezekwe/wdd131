@@ -1,0 +1,168 @@
+:root{
+    --primary-color: #001f54;
+    --secondary-color: #005B40;
+    --secondary-color1: #4CAF50;
+    --accent-color: #f8c630;
+    --heading-color: #ffffff;
+    --text-color: #000000;
+    --text-color1:#333333;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--heading-color);
+    color: var(--text-color);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color); 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 75px; /* Size the logo */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--secondary-color1); 
+}
+
+/* Portfolio Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--heading-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--secondary-color1);
+    color: var(--accent-color);;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333333;
+    color: var(--heading-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Media Queries for Responsiveness for mobile phones, tablets and small screen medias*/
+@media (max-width: 768px) {
+    header, footer, .section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    form input, form textarea {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    form input, form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
